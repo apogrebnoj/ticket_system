@@ -1,0 +1,9 @@
+<h1>Ticket Details</h1>
+
+<p>Title: <%= @ticket.title %></p>
+<p>Description: <%= @ticket.description %></p>
+<p>Status: <%= @ticket.status %></p>
+<!-- Add other ticket attributes as needed -->
+
+<%= link_to 'Edit', edit_ticket_path(@ticket) %>
+<%= link_to 'Delete', ticket_path(@ticket), method: :delete, data: { confirm: 'Are you sure?' } %>
